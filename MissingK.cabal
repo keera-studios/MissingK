@@ -10,7 +10,7 @@ Name:                MissingK
 Version:             0.0.0.1
 
 -- A short (one-line) description of the package.
-Synopsis:            A collection of types and definitions that are often useful and are missing in other libraries
+Synopsis:            A collection of types and definitions that are useful and missing in other Keera libraries
 
 -- A longer description of the package.
 -- Description:         
