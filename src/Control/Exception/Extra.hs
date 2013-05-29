@@ -1,12 +1,15 @@
 module Control.Exception.Extra where
 
-import GHC.Conc
-import System.Glib.GError
+import           GHC.Conc
+import           System.Glib.GError
 import qualified Control.Exception as E
 
 -- | Returns a given computation ignoring an exception
 anyway :: a -> E.SomeException -> a
 anyway f _ = f
+
+handleExceptions :: IO a -> IO a -> IO a
+handleExceptions handler = E.handle (anyway handler)
 
 -- | Tries to execute all the IO computations
 -- until one succeeds
