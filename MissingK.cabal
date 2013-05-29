@@ -53,7 +53,9 @@ Library
   -- Modules exported by the library.
   Exposed-modules: Data.Stack
                  , Data.String.Extra
+                 , Data.List.Extra
                  , System.Environment.SetEnv
+                 , Control.Arrow.Extra
                  , Control.Exception.Extra
 
                  -- from haskell-prmvc-helpers
