@@ -1,0 +1,37 @@
+Keera's MissingK
+===========================================
+
+We all find some functions missing in Haskell that appear in our programs over
+and over. This module contains such functions.
+
+If you find something here that is already in some other package, please let me
+know.  I'll probably prefer to depend on that instead and make this as small as
+possible.
+
+MissingK depends on glib, which needs gtk2hs-buildtools installed (and in your
+PATH, which will probably be $HOME/.cabal/bin if you installed
+gtk2hs-buildtools with cabal). It also needs the library glib2.0, which in
+Ubuntu you can install with:
+
+    $ apt-get install libglib2.0-dev
+
+Because gtk2hs-buildtools depends on happy and alex, you may want to install
+those too, either with cabal or with apt-get. The syntax is analogous.
+
+    $ apt-get install alex happy
+
+
+Reverse dependencies
+===========================================
+
+Keera Hails depends on this package a lot, mainly because there were functions
+that I needed all over the place. Some functions may disappear if I find them
+somewhere else, but this package has been quite stable over the years. So feel
+free to use it/depend on it.
+
+Notes
+===========================================
+
+I do not like depending on glib from here. It's a huge dependency. It's use for
+exception handling.  It's not going to change in the near future, but just be
+warned that that might disappear. If you have ideas on this, send me a message.
