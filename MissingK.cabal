@@ -66,9 +66,3 @@ Library
   Build-depends: base >= 4
                , template-haskell
                , glib
-  
-  -- Modules not exported by this package.
-  -- Other-modules:       
-  
-  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
-  -- Build-tools:         
