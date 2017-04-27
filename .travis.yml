@@ -29,3 +29,12 @@ branches:
     only:
           - master
           - develop
+
+deploy:
+  provider: hackage
+  username: keera_studios_ci
+  password:
+    secure: PmllS5ILGWnFS3FJtKaKMGDSzSoucxtKW4fEwFDWAG9WBLsNBon+t0hbYBHYw9q8F8/+/QCzkKlqlKyICrVakxMy4CYeCO9xIJdTOUSxmoaSYrk1wuTCSZHfBG3jRqaY+rVSUS0GcYe8sNsXtJO4f1X3CUyLceoEDQSoEEbR5Juizn55kwJEhfLRHv3JNjyHPU0El0nO7XJkBzeY3zi3PO+sYskHgIXhB9OJE5YSwGBOpU9RTSgskv4dbijDdPaQi/qBmeaRIEabY3wFe+PFEfLfZsb2POMYUAoSAEQJ8XwdRhyOnvvEyETNcw1fRgaTvRaLEYNc4PIxJblSMLTfxsaFvHZ5tGlXXAnZ7bAVvTWRTT0hlFzki7I6tMVWTkvWlRTagcjO75KkQrdmX9sCgpYIWxsLmgTZ6b3c8BbtmfgoSooU/zEXmmD+j2VpoWG/rhRbFSbW0v2zSdiy8c+ui4xkB+gORh6aFeX4He+TgyH3EDVntBB1D4J0HEeuqGDr9plfJoiy6oY8HAMdyp7WqYzANBSLUSqvywXscZIhxBqvM8fPcStVkIrOREcEMjGbVdta8DHmJDxaIEwd7Z0K9mn3tcpomR9VR5LKL0plVFEKnBMg00N75cuYvxVe/4D/xx7vTL8R6hHx62VHTXQkJ+QF/2Tc3sVtknQfFWca4+o=
+  on:
+    branch: master
+    condition: "$GHCVER = 8.0.1"
