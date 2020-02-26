@@ -65,7 +65,6 @@ Library
   -- Packages needed in order to build this package.
   Build-depends: base >= 4 && < 5
                , template-haskell
-               , glib
 
 source-repository head
   type:     git
