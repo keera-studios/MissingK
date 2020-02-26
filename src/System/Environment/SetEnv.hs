@@ -1,5 +1,9 @@
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE ForeignFunctionInterface #-}
+-- |
+-- Copyright   : (C) Keera Studios Ltd, 2013
+-- License     : BSD3
+-- Maintainer  : support@keera.co.uk
 module System.Environment.SetEnv (setEnv) where
 
 #ifdef linux_HOST_OS
@@ -32,15 +36,15 @@ foreign import ccall unsafe "putenv"
   c_putenv :: CString -> IO ()
 
 setEnv :: String -> String -> IO()
-setEnv key value = 
+setEnv key value =
  withCString (key ++ "=" ++ value) $ \c_pair ->
  c_putenv c_pair
 
 -- foreign import stdcall unsafe "windows.h SetEnvironmentVariableW"
 --  c_SetEnvironmentVariable :: LPCTSTR -> LPCTSTR -> IO Bool
--- 
+--
 -- setEnvironmentVariable :: String -> String -> IO Bool
--- setEnvironmentVariable key value = 
+-- setEnvironmentVariable key value =
 --  withTString key $ \c_key ->
 --  withTString value $ \c_value ->
 --  c_SetEnvironmentVariable c_key c_value
