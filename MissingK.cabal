@@ -59,16 +59,14 @@ library
 
   -- Modules exported by the library.
   exposed-modules:
-      Data.Stack
-    , Data.String.Extra
-    , Data.List.Extra
-    , System.Environment.SetEnv
-    , Control.Arrow.Extra
-    , Control.Exception.Extra
-
-    -- from haskell-prmvc-helpers
-    , Language.Haskell.TH.DeriveField
-    , Data.ExtraVersion
+    Control.Arrow.Extra
+    Control.Exception.Extra
+    Data.ExtraVersion
+    Data.List.Extra
+    Data.Stack
+    Data.String.Extra
+    Language.Haskell.TH.DeriveField
+    System.Environment.SetEnv
 
   -- Packages needed in order to build this package.
   build-depends:
