@@ -3,18 +3,18 @@
 -- License     : BSD3
 -- Maintainer  : support@keera.co.uk
 
-cabal-version:       >=1.6
-build-type:          Simple
+cabal-version: >=1.6
+build-type:    Simple
 
-name:                MissingK
-version:             0.0.1
-author:              Ivan Perez
-maintainer:          ivan.perez@keera.co.uk
-homepage:            http://www.keera.co.uk/blog/
-license:             BSD3
-license-file:        LICENSE
-category:            Development
-synopsis:            Useful types and definitions missing from other libraries
+name:          MissingK
+version:       0.0.1
+author:        Ivan Perez
+maintainer:    ivan.perez@keera.co.uk
+homepage:      http://www.keera.co.uk/blog/
+license:       BSD3
+license-file:  LICENSE
+category:      Development
+synopsis:      Useful types and definitions missing from other libraries
 description:
   Useful types and definitions missing from other libraries.
 
@@ -36,7 +36,7 @@ library
     System.Environment.SetEnv
 
   build-depends:
-      base >= 4 && < 5
+      base             >= 4 && < 5
     , template-haskell
 
   hs-source-dirs:
