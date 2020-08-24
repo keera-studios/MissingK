@@ -3,7 +3,7 @@
 -- License     : BSD3
 -- Maintainer  : support@keera.co.uk
 
-cabal-version: >=1.6
+cabal-version: >= 1.6
 build-type:    Simple
 
 name:          MissingK
