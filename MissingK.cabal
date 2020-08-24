@@ -23,6 +23,7 @@ source-repository head
   type:     git
   location: git://github.com/keera-studios/MissingK.git
 
+
 library
 
   exposed-modules:
